@@ -1,0 +1,52 @@
+;******************************************************************************;
+;                                                                              ;
+;                                                         :::      ::::::::    ;
+;    .myemacs                                           :+:      :+:    :+:    ;
+;                                                     +:+ +:+         +:+      ;
+;    By: kboddez <marvin@42.fr>                     +#+  +:+       +#+         ;
+;                                                 +#+#+#+#+#+   +#+            ;
+;    Created: 2016/10/05 07:43:27 by kboddez           #+#    #+#              ;
+;    Updated: 2016/10/19 08:56:38 by kboddez          ###   ########.fr        ;
+;                                                                              ;
+;******************************************************************************;
+
+;; require
+(require 'cc-mode)
+
+;; Automatic indentation for c-modes (after pressing tab)
+(define-key c-mode-base-map (kbd "RET") 'newline-and-indent)
+
+;; Affiche les lignes et colonnes dans la barre du bas
+(line-number-mode 1)
+(column-number-mode 1)
+
+;; Montre les parenthèses
+(show-paren-mode 1)
+(set-face-background 'show-paren-match "green")
+(set-face-foreground 'show-paren-match "grey")
+
+;; Enleve automatiquement les espaces en fin de ligne des qu'on sauvegarde
+ (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(put 'scroll-left 'disabled nil)
+
+;; Color settings to make Emacs look pretty
+(set-foreground-color "#989898")
+(set-face-foreground 'font-lock-comment-face "#2D8A2D")
+
+;; Melpa installer
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   '("melpa" . "http://melpa.org/packages/")
+   t)
+  (package-initialize))
+
+;; Auto-completion
+(ac-config-default)
+
+;; Google Trad
+(setq google-translate-translation-directions-alist '(("fr" . "en")))
+
+;; Auto Update Package
+(auto-package-update-at-time "16:20")
