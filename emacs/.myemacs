@@ -1,15 +1,3 @@
-;******************************************************************************;
-;                                                                              ;
-;                                                         :::      ::::::::    ;
-;    .myemacs                                           :+:      :+:    :+:    ;
-;                                                     +:+ +:+         +:+      ;
-;    By: kboddez <marvin@42.fr>                     +#+  +:+       +#+         ;
-;                                                 +#+#+#+#+#+   +#+            ;
-;    Created: 2016/10/05 07:43:27 by kboddez           #+#    #+#              ;
-;    Updated: 2016/10/19 08:56:38 by kboddez          ###   ########.fr        ;
-;                                                                              ;
-;******************************************************************************;
-
 ;; require
 (require 'cc-mode)
 
@@ -34,19 +22,19 @@
 (set-face-foreground 'font-lock-comment-face "#2D8A2D")
 
 ;; Melpa installer
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (add-to-list
-   'package-archives
-   '("melpa" . "http://melpa.org/packages/")
-   t)
-  (package-initialize))
+;(when (>= emacs-major-version 24)
+;  (require 'package)
+;  (add-to-list
+;   'package-archives
+;   '("melpa" . "http://melpa.org/packages/")
+;   t)
+;  (package-initialize))
 
 ;; Auto-completion
-(ac-config-default)
+;(ac-config-default)
 
 ;; Google Trad
-(setq google-translate-translation-directions-alist '(("fr" . "en")))
+;(setq google-translate-translation-directions-alist '(("fr" . "en")))
 
 ;; Auto Update Package
-(auto-package-update-at-time "16:20")
+;(auto-package-update-at-time "16:20")

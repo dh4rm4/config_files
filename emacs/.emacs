@@ -1,15 +1,3 @@
-;******************************************************************************;
-;                                                                              ;
-;                                                         :::      ::::::::    ;
-;    .emacs                                             :+:      :+:    :+:    ;
-;                                                     +:+ +:+         +:+      ;
-;    By: kboddez <marvin@42.fr>                     +#+  +:+       +#+         ;
-;                                                 +#+#+#+#+#+   +#+            ;
-;    Created: 2016/10/05 07:37:24 by kboddez           #+#    #+#              ;
-;    Updated: 2016/10/05 07:44:53 by kboddez          ###   ########.fr        ;
-;                                                                              ;
-;******************************************************************************;
-
 ; Load general features files
 ;(setq config_files "/usr/share/emacs/site-lisp/")
 ;(setq load-path (append (list nil config_files) load-path))

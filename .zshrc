@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/dh4rm4/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="odin"
+ZSH_THEME="mortalscumbag"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -88,9 +88,7 @@ alias emacs="emacs -nw"
 alias py="python"
 alias py3="python3"
 alias rM="rm -r"
-alias szrc="source ~/.zshrc"
+alias zsrc="source ~/.zshrc"
 alias update="sudo apt-get update"
 alias upgrade="update && sudo apt-get upgrade -y"
-alias gotests="cd ~/greeny/tests"
-alias stream_dl="cd ~/greeny/python/stream_dl && sudo python dependancies.py"
 alias sleep_well="sudo shutdown now"
