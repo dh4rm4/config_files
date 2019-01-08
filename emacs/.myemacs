@@ -1,4 +1,4 @@
-;; require
+; require
 (require 'cc-mode)
 (require 'package)
 
@@ -21,6 +21,13 @@
 ;; Color settings to make Emacs look pretty
 (set-foreground-color "#989898")
 (set-face-foreground 'font-lock-comment-face "#2D8A2D")
+(put 'downcase-region 'disabled nil)
+(custom-set-variables )
+(custom-set-faces
+ '(font-lock-function-name-face ((t (:foreground "color-136"))))
+ '(font-lock-keyword-face ((t (:foreground "color-241")))))
+
+
 
 ;; Warning policy
 (setq warning-minimum-level :emergency)
@@ -57,35 +64,21 @@
 (setq linum-format "%d ")
 
 
-;; csv formatage
-(defun org-convert-csv-table (beg end)
-  (interactive (list (point) (mark)))
-  (replace-string "\\(^\\)\\|\\(\".*?\"\\)\\|,")
-  nil  beg end)
+;; ORG mode
+;; -*- emacs-lisp -*-
+(unless package-archive-contents    ;; Refresh the packages descriptions
+  (package-refresh-contents))
+(setq package-load-list '(all))     ;; List of packages to load
+(unless (package-installed-p 'org)  ;; Make sure the Org package is
+  (package-install 'org))           ;; installed, install it if not
+(package-initialize)                ;; Initialize & Install Package
+;; (setq org-...)                   ;; Your custom settings
 
-(require 's) ;; M-x package-install <RETURN> s <RETURN>
+;; bar color
+(set-face-foreground 'mode-line "#606060")
+(set-face-background 'mode-line "#202020")
+(set-face-foreground 'mode-line-inactive "#606060")
+(set-face-background 'mode-line-inactive "#202020")
 
-
-(defun markdown--csv-to-table (csv)
-  ;;Turn a CSV into a markdown table.
-  (string-join ;; this will happen last, join everything up and return it to the caller.
-   (mapcar ;; walk through the lines in the CSV selection.
-	(lambda (line) ;; in each line...
-	  (setq line (format "| %s |" line)) ;; place | pipes at the start and end of the line.
-	  (s-replace "," " | " line)) ;; replace commas with | pipes
-	(split-string (s-chomp csv) "\n")) "\n")) ;; This is acutally happening at the start, we split CSV at newlines
-
-(defun markdown-csv-to-table (begin end)
-  (interactive "r") ;; get the region using the (interactive) macro.
-  (unless (region-active-p) ;; Abort when there's no region selected.
-	(error "csv text region must be selected"))
-  (let ((table (markdown--csv-to-table (buffer-substring begin end)))) ;; use the function above to make the actual table
-	(save-excursion ;; return to the same position after running the next command...
-	  (delete-region begin end)) ;; delete the original text
-	(insert table))) ;; insert the markdown table
-
-
-(add-to-list 'load-path "~/home/kboddez/.emacs.d/elpa/dockerfile-mode/dockerfile-mode.el")
-(load "dockerfile-mode")
-(require 'dockerfile-mode)
-(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+;;; Remove menu bar
+(menu-bar-mode -1)
