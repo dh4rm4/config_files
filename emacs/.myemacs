@@ -18,14 +18,21 @@
  (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (put 'scroll-left 'disabled nil)
 
-;; Color settings to make Emacs look pretty
+;; Theme settings to make Emacs look pretty
 (set-foreground-color "#989898")
 (set-face-foreground 'font-lock-comment-face "#2D8A2D")
 (put 'downcase-region 'disabled nil)
-(custom-set-variables )
+
+;;; faces color
 (custom-set-faces
  '(font-lock-function-name-face ((t (:foreground "color-136"))))
- '(font-lock-keyword-face ((t (:foreground "color-241")))))
+ '(font-lock-keyword-face ((t (:foreground "color-241"))))
+
+ ;; For auto-complete popup
+'(popup-face ((t (:inherit default :background "black" :foreground "color-243"))))
+'(popup-scroll-bar-background-face ((t (:background "black"))))
+'(popup-summary-face ((t (:inherit popup-face :background "black" :foreground "dimgray"))))
+'(popup-tip-face ((t (:background "brightblack" :foreground "black")))))
 
 
 
@@ -82,3 +89,15 @@
 
 ;;; Remove menu bar
 (menu-bar-mode -1)
+
+;; AutoComplete
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(unless (package-installed-p 'auto-complete)  ;; Make sure the Org package is
+  (package-install 'auto-complete))           ;; installed, install it if not
+(package-initialize)  ;load and activate packages, including auto-complete
+(ac-config-default)
+(global-auto-complete-mode t)
+
+;; replace killing all buffer, by just the current one
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
