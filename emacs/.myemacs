@@ -1,4 +1,4 @@
-; require
+;require
 (require 'cc-mode)
 (require 'package)
 
@@ -101,3 +101,20 @@
 
 ;; replace killing all buffer, by just the current one
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
+
+;; Dockerfile mode
+(unless (package-installed-p 'dockerfile-mode)
+  (package-install 'dockerfile-mode))
+(require 'dockerfile-mode)
+(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+
+;; Web=mode
+;; highlight/indent code inside HTML balise
+(unless (package-installed-p 'web-mode)
+  (package-install 'web-mode))
+
+;; Yaml mode
+(unless (package-installed-p 'yaml-mode)
+  (package-install 'yaml-mode))
+
+(setq lazy-highlight-cleanup nil)
