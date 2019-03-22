@@ -1,5 +1,5 @@
 echo "[+] Install basics stuff"
-sudo apt install -yy kde-plasma-desktop htop git tree
+sudo apt install -yy kde-plasma-desktop htop git tree xclip
 sudo apt purge -yy kwrite konqueror kwalletmanager plasma-discover plasma-discover-common
 sudo apt --fix-broken install
 sudo apt-get autoremove -yy
@@ -7,12 +7,12 @@ cd basics
 
 echo "[+] Install Oh-my-zsh"
 cd Oh-my-zsh/
-./get_oh_my_zsh.sh > out.log 2> err.log
+./get_oh_my_zsh.sh
 cd ..
 
 echo "[+] Setup emacs"
 cd emacs
-./setup_emacs.sh >> out.log 2>> err.log
+./setup_emacs.sh
 cd ..
 
 echo "[+] Setup Fonts"
@@ -21,7 +21,7 @@ cd fonts
 cd ..
 
 echo "[+] Setup Terminator"
-cd Terminator
+cd terminator
 sudo apt install -yy Terminator
 cp config ~/.config/terminator
 cd ..
