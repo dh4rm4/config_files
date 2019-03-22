@@ -8,6 +8,10 @@ echo "[+] Install basics stuff"
 #sudo apt-get autoremove -yy
 cd basics
 
+echo "[+] Setup git"
+git config --global user.name "dh4rm4"
+git config --global user.email "dh4rm4@protonmail.com"
+
 echo "[+] Install Oh-my-zsh"
 #cd Oh-my-zsh/
 #./get_oh_my_zsh.sh
