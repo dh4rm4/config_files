@@ -1,3 +1,6 @@
+echo "[+] Add KDE config"
+cp config/* ~/.config/
+
 echo "[+] Install Kvantum"
 sudo apt install -yy g++ cmake libx11-dev libxext-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libqt4-dev qttools5-dev-tools libkf5windowsystem-dev git
 cd ~/Download/ && mkdir kvantum_installation && cd kvantum_installation
