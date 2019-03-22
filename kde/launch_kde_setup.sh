@@ -12,7 +12,8 @@ cmake ..
 make
 sudo make install
 echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
-rm -rf Kvantum* v0*
+cd ../../../.. 
+rm -rf kvantum_installation
 
 echo "[+] Install Monochrome theme"
 mkdir monochrome_installation && cd monochrome_installation
