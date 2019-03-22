@@ -1,5 +1,8 @@
 echo "[+] Install basics stuff"
-sudo apt install -yy kde-plasma-desktop htop git tree xclip
+sudo cp sources.list /etc/apt/sources.list
+sudo apt update
+sudo apt upgrade -yy
+sudo apt install -yy kde-plasma-desktop htop git tree xclip firmware-iwlwifi
 sudo apt purge -yy kwrite konqueror kwalletmanager plasma-discover plasma-discover-common
 sudo apt --fix-broken install
 sudo apt-get autoremove -yy
