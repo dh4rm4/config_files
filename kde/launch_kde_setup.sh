@@ -16,5 +16,5 @@ echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
 
 echo "[+] Install Monochrome theme"
 mkdir monochrome_installation && cd monochrome_installation
-git clone git@gitlab.com:pwyde/monochrome-kde.git && cd monochrome-kde
+git clone https://gitlab.com/pwyde/monochrome-kde.git && cd monochrome-kde
 bash install.sh -i
