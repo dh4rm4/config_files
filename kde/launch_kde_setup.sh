@@ -1,3 +1,9 @@
+echo "[+] Install KDE Plasma"
+sudo apt install kde-plasma-desktop -yy
+sudo apt-get purge kwrite konqueror kwalletmanager plasma-discover plasma-discover-common -yy
+sudo apt --fix-broken install -yy
+sudo apt-get autoremove
+
 echo "[+] Add KDE config"
 cp config/* ~/.config/
 
