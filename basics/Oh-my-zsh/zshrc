@@ -32,25 +32,37 @@ alias emacs="emacs -nw"
 alias py="python"
 alias py3="python3"
 
+alias pie="pip install -e ."
+alias p3ie="pip3 install -e ."
+
 
 #########
 # System
 alias rM="rm -r"
 alias zsrc="source ~/.zshrc"
 alias esrc="emacs ~/.zshrc"
+alias esrc="emacs $HOME/.zshrc"
 
 alias update="sudo apt-get update"
 alias upgrade="update && sudo apt-get upgrade"
 alias sleep_well="sudo shutdown now"
 
 alias blink="redshift -x"
-alias xopen="xdg-open"
+alias xopen="xdg-open 2>&- 2>&1 >/dev/null"
+
+alias xclipc="xclip -selection c"
+alias xclipoc="xclip -out -selection c"
+
 
 ###########
 # Virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+alias wokron='workon'
 
+
+##########
+# Krakeno
 alias goKrakeno="cd /home/dh4rm4/.virtualenvs/krakeno/greeny"
 
 ##########
@@ -66,3 +78,34 @@ function check_code {
 		fi
 	fi
 }
+
+#####                                                                                                 
+# GIT                                                                                                 
+alias gclean="git checkout ."
+
+git() {
+    if [[ $@ == "push -f" || $@ == "push" ]]; then
+        command echo "你是 傻逼."
+    elif [[ $@ == "push origin master" ]]; then
+        command printf "You are going to push on master.\nSURE ABOUT THAT ?\n"
+        read c
+        command git push origin master
+    else
+        command git "$@"
+    fi
+}
+
+
+########                                                                                                                                                                                                             
+# PSQL                                                                                                                                                                                                               
+export YELLOW=`echo -e '\033[1;33m'`
+export LIGHT_CYAN=`echo -e '\033[1;36m'`
+export GREEN=`echo -e '\033[0;32m'`
+export NOCOLOR=`echo -e '\033[0m'`
+export LESS="-iMSx4 -FXR"
+export PAGER="sed \"s/^\(([0-9]\+ [rows]\+)\)/$GREEN\1$NOCOLOR/;s/^\(-\[\ RECORD\ [0-9]\+\ \][-+]\+\)/$GREEN\1$NOCOLOR/;s/|/$GREEN|$NOCOLOR/g;s/^\([-+]\+\)/$GREEN\1$NOCOLOR/\" 2>/dev/null | less"
+
+
+########                                                                                                                                                                                       
+# DOCKER                                                                                                                                                                                       
+alias dl_all_container="docker container rm `docker container ls -a | cut -d' ' -f1 | sed '/CONTAINER/d'`"
