@@ -1,3 +1,7 @@
+# Useful docs
+# Setup everything: https://suva.sh/posts/gpg-ssh-smartcard-yubikey-keybase/
+# GPG commit signature: https://git-scm.com/book/fr/v2/Utilitaires-Git-Signer-votre-travail
+
 echo "[+] Install dependancies"
 sudo apt install -yy libpcsclite-dev libpcsclite1
 
@@ -11,6 +15,9 @@ sudo mkdir -p /etc/udev/scripts/
 sudo cp gnupg-ccid /etc/udev/scripts/gnupg-ccid
 sudo chmod +x /etc/udev/scripts/gnupg-ccid
 sudo ln -s /etc/udev/gnupg-ccid.rules /etc/udev/rules.d/gnupg-ccid.rules
+
+cp gnpug ${HOME}/.gnupg
+chmod 700 ${HOME}/.gnupg
 
 sudo apt install -yy scdameon
 /usr/lib/gnupg/scdaemon --daemon
