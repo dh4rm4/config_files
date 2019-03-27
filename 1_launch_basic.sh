@@ -6,8 +6,9 @@ sudo apt install -yy htop git tree xclip firmware-iwlwifi
 cd basics
 
 echo "[+] Setup git"
-git config --global user.name "dh4rm4"
-git config --global user.email "dh4rm4@protonmail.com"
+cd git
+./setup_git.sh
+cd..
 
 echo "[+] Setup emacs"
 cd emacs
