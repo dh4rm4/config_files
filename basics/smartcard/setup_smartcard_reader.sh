@@ -26,10 +26,18 @@ echo "[+] Create SmartCard group"
 sudo addgroup scard
 sudo addgroup dh4rm4 scard
 
+echo "[+] Import public key"
+curl https://raw.githubusercontent.com/dh4rm4/gpg_key/master/pub.asc | gpg2 --import
 
-# Master: E9135BB2EE8DD868CFD419746DB85EE72825E178
-#                                 6DB85EE72825E178
 
-# Sign : CF6BB7A509134354
-# Encrypt: 45F1FC47A72EC344
-# Auth: DE2698BCDA72E0C3
+
+################################
+# Test if everything is working
+## Encrypt and Decrypt
+# echo "$(uname -a)" | gpg2 --encrypt --armor --recipient $KEYID | gpg2 --decrypt --armor
+
+## Sign and Verify
+# echo "$(uname -a)" | gpg2 --clearsign --armor --default-key $KEYID | gpg2
+
+## Put it all together
+# echo "$(uname -a)" | gpg2 --encrypt --sign --armor --default-key $KEYID --recipient $KEYID  | gpg2 --decrypt --armor
