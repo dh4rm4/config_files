@@ -1,5 +1,5 @@
 echo "[+] Install KDE Plasma"
-sudo apt install kde-plasma-desktop -yy
+sudo apt install kde-plasma-desktop plasma-nm -yy
 sudo apt-get purge kwrite konqueror kwalletmanager plasma-discover plasma-discover-common -yy
 sudo apt --fix-broken install -yy
 sudo apt-get autoremove -yy
@@ -18,7 +18,7 @@ cmake ..
 make
 sudo make install
 echo "export QT_STYLE_OVERRIDE=kvantum" >> ~/.profile
-cd ../../../.. 
+cd ../../../..
 rm -rf kvantum_installation
 
 echo "[+] Install Monochrome theme"

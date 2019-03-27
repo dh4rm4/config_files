@@ -49,6 +49,7 @@ alias xopen="xdg-open"
 ###########
 # Virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 alias goKrakeno="cd /home/dh4rm4/.virtualenvs/krakeno/greeny"

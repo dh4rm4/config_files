@@ -1,0 +1,32 @@
+[General]
+confirmLogout=true
+excludeApps=
+loginMode=default
+offerShutdown=true
+screenCount=1
+shutdownType=2
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10e3dada61000155327217600000008420003
+clientId2=10e3dada61000155327217600000008420007
+clientId3=10e3dada61000155332453000000076400006
+count=3
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_10e3dada61000155327217600000008420003_1553324648_247069
+program1=kwin_x11
+program2=/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil
+program3=pulseaudio
+restartCommand1=kwin_x11,-session,10e3dada61000155327217600000008420003_1553324648_247069
+restartCommand2=/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil,-session,10e3dada61000155327217600000008420007_1553324648_233335
+restartCommand3=
+restartStyleHint1=0
+restartStyleHint2=0
+restartStyleHint3=0
+userId1=dh4rm4
+userId2=dh4rm4
+userId3=dh4rm4
+wasWm1=true
+wasWm2=false
+wasWm3=false

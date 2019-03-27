@@ -1,21 +1,13 @@
 echo "[+] Install basics stuff"
-#sudo cp sources.list /etc/apt/sources.list
-#sudo apt update
-#sudo apt upgrade -yy
-#sudo apt install -yy kde-plasma-desktop htop git tree xclip firmware-iwlwifi
-#sudo apt purge -yy kwrite konqueror kwalletmanager plasma-discover plasma-discover-common
-#sudo apt --fix-broken install
-#sudo apt-get autoremove -yy
+sudo cp sources.list /etc/apt/sources.list
+sudo apt update
+sudo apt upgrade -yy
+sudo apt install -yy htop git tree xclip firmware-iwlwifi
 cd basics
 
 echo "[+] Setup git"
 git config --global user.name "dh4rm4"
 git config --global user.email "dh4rm4@protonmail.com"
-
-echo "[+] Install Oh-my-zsh"
-#cd Oh-my-zsh/
-#./get_oh_my_zsh.sh
-#cd ..
 
 echo "[+] Setup emacs"
 cd emacs
@@ -42,3 +34,22 @@ sudo apt-get install -f
 mkdir -p ~/.config/vivaldi/Default
 cp Preferences ~/.config/vivaldi/Default/
 cd ..
+
+echo "[+] Setup smartcard reader"
+cd smartcard
+./setup_smartcard_reader.sh
+
+echo "[+] Setup python env"
+sudo apt install -yy python3-pip
+pip3 install virtualenvwrapper
+sudo mkdir -p /usr/share/virtualenvwrapper
+sudo cp ${HOME}/.local/bin/virtualenvwrapper.sh /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
+echo "[+] Install Python 3.7.2"
+cd /usr/src
+sudo apt-get install zlib1g-dev libffi-dev
+sudo wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+sudo tar xzf Python-3.7.2.tgz
+cd Python-3.7.2
+sudo ./configure --enable-optimizations
+sudo make altinstall

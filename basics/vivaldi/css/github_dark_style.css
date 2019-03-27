@@ -1018,7 +1018,7 @@ background-position: left top !important;
   code {
     overflow: visible !important;
   }
-  
+
   .blog-aside {
     position: sticky !important;
     position: -webkit-sticky !important;
@@ -3809,7 +3809,7 @@ background-position: left top !important;
   .graphiql-container .execute-button svg {
     fill: currentColor !important;
   }
-  
+
   /* inline code - single lines */
   .markdown-body code, .markdown-body tt, .protip code, .content dl code,
   .content ul code, p code, .content .sectionbody .dlist dt, .content p > tt,
