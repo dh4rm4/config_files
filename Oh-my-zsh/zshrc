@@ -28,7 +28,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # GPG2
 export GPG_TTY=$(tty)
-export KEYID=0x6DB85EE72825E178
+export KEYID=0x01FECC451684BDE1
 alias gpg="gpg2"
 
 ## gpg-agent config
