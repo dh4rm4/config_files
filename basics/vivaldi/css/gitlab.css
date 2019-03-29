@@ -19,8 +19,69 @@
     border-right-color: #262626;
 }
 
+.account-well {
+    background-color: #262626;
+    border: 1px solid #565656;
+}
+
+.well, .search_box {
+   background-color: #202020;
+   border: 1px solid #565656;
+}
+
+.commit-header {
+    background-color: #202020;
+    border-top: 1px solid #565656;
+    border-bottom: 1px solid #565656;
+}
+
+.well-list>li:not(.ui-sort-disabled):hover {
+      background: #262626;
+}
+
+ul.content-list li {
+    border-color: #565656;
+}
+
+.navbar-empty {
+    background: #202020;
+    border-bottom: 1px solid #565656;
+}
+
+.login-page .new-session-tabs  {
+    box-shadow: 0 0 0 1px #565656;
+}
+.login-page .new-session-tabs li {
+    border-left: 1px solid #565656;
+}
+.login-page .new-session-tabs li a {
+    background: #202020;
+}
+.login-page .new-session-tabs li.active a {
+    background: #202020;
+    border-bottom: 2px solid #67b977 !important;
+}
+.login-page .login-box, .login-page .omniauth-container {
+    box-shadow: 0 0 0 1px #565656;
+}
 .fa-search:before {
     color: #565656;
+}
+.devise-layout-html body .footer-container, .devise-layout-html body hr.footer-fixed {
+    background: #202020;
+}
+.gl-show-field-errors .gl-field-hint {
+    color: #999999;
+}
+.light, .description-block {
+    color: #999999;
+}
+hr {
+    margin: 0px 0;
+    border-top: 1px solid #565656;
+}
+.footer-links {
+    margin: 10px;
 }
 
 .project-home-panel, .group-home-panel {
@@ -37,6 +98,8 @@
 
 .row-content-block {
     border-bottom: 1px solid #565656;
+    border-top: 1px solid #565656;
+    background-color: #202020;
 }
 
 .input-group .input-group-addon {
@@ -47,6 +110,19 @@
 
 .event-item {
     border-bottom: 1px solid #565656;
+}
+
+.file-holder .file-title {
+    background-color: #202020;
+    border-bottom: 1px solid #565656;
+}
+
+.file-holder .file-content {
+    background: #161616;
+}
+
+.file-holder {
+    border: 1px solid #565656 !important;
 }
 
 .cover-block {
@@ -67,16 +143,29 @@
     border: 1px solid #161616;
 }
 
+.wiki p {
+    color: #999999;
+}
+
 .info-well {
-    background: #161616;
+    background: #202020;
     color: #e2e2e2;
     border: 1px solid #363636;
     margin-bottom: 16px;
+}
+.commit .commit-row-description, .generic_commit_status .commit-row-description {
+    background: #262626;
 }
 
 .nav-sidebar {
     background-color: #1d1d1d !important;
     box-shadow: inset -2px 0 0 #363636;
+}
+
+.tree-holder .tree-table tr:hover:not(.tree-truncated-warning) td {
+    background-color: #262626;
+    border-top: 1px solid #565656;
+    border-bottom: 1px solid #565656;
 }
 
 .top-area, .wiki-page-header {
@@ -145,8 +234,23 @@ body.ui_indigo .navbar-gitlab .navbar-sub-nav>li.active>a, body.ui_indigo .navba
 }
 
 .navbar-gitlab.navbar-gitlab {
-border-bottom: 1px solid #363636;
+    border-bottom: 1px solid #363636;
 }
+
+.commit-actions .btn-clipboard, .commit-actions .btn-transparent {
+    border-bottom: 1px solid #363636;
+}
+
+body.ui_indigo .search .location-badge {
+    background-color: #303030;
+    color: #999999;
+}
+
+body.ui_indigo .search.search-active .location-badge {
+    background-color: #363636;
+    color: #999999;
+}
+
 
 .toggle-sidebar-button, .close-nav-button {
     background-color: #1d1d1d !important;
@@ -157,6 +261,168 @@ border-top: 2px solid #363636;
 .fa-file-text-o:before {
     color: #707070;
 }
+
+/* === COMMIT === */
+.gpg-status-box.valid {
+    color: #1aaa55 !important;
+    border-color: #1AAA55 !important;
+}
+.diff-files-changed .commit-stat-summary {
+    background-color: #202020;
+}
+.diff-files-changed {
+    background-color: #161616;
+}
+.timeline-entry {
+    border-color: #565656;
+    color: #999999;
+    background: #161616;
+}
+.code.white .line_holder .line_content.match {
+    color: #999999;
+    background: #565656;
+}
+.cgray, .commit.inline-commit .committed_ago, .generic_commit_status.inline-commit .committed_ago {
+    color: #999999;
+}
+.commit-box .commit-title {
+    color: #999999;
+}
+.form-control:focus, .common-note-form, .md-area.is-focused, .search form:focus, .search.search-active form {
+    border-color: #565656 !important;
+}
+.code.white .line_holder .line_content.old {
+    background-color: #380000 !important;
+}
+.code.white .line_holder .diff-line-num.old {
+    background-color: #380000;
+}
+.code.white .line_holder .line_content.new {
+    background-color: #002800;
+}
+.code.white .line_holder .diff-line-num.new {
+    background-color: #002800;
+}
+.code.white .line_holder .line_content.old span.idiff {
+    background: #622 !important;
+    color: #eee !important;
+}
+.code.white .line_holder .line_content.new span.idiff {
+    background: #252 !important;
+    color: #eee !important;
+}
+.info-well .label.label-gray, .info-well .shortcut-mappings .label-gray.key, .shortcut-mappings .info-well .label-gray.key {
+    background-color: #363636;
+}
+.commit-box {
+    border-top: 1px solid #565656;
+}
+.common-note-form .md-area {
+    border: 1px solid #565656;
+}
+.markdown-area {
+    border: 1px solid #565656 !important;
+}
+
+
+/* === MAIN === */
+
+a:hover {
+    background-color: #262626;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #565656;
+}
+
+.event-item .event-title {
+    color: #565656;
+}
+
+.event-title {
+    color: #565656;
+}
+
+ul.content-list li {
+    color: #666666;
+}
+
+.navbar-gitlab .dropdown-menu li a.is-focused, .navbar-gitlab .dropdown-menu li a:hover, .navbar-gitlab .dropdown-menu li .participants-more .btn-link:hover, .participants-more .navbar-gitlab .dropdown-menu li .btn-link:hover, .navbar-gitlab .dropdown-menu li .user-list-more .btn-link:hover, .user-list-more .navbar-gitlab .dropdown-menu li .btn-link:hover, .navbar-gitlab .dropdown-menu li a:active, .navbar-gitlab .dropdown-menu li a:focus, .navbar-gitlab .dropdown-menu li button.is-focused, .navbar-gitlab .dropdown-menu li button:hover, .navbar-gitlab .dropdown-menu li button:active, .navbar-gitlab .dropdown-menu li button:focus, .navbar-gitlab .dropdown-menu li .menu-item.is-focused, .navbar-gitlab .dropdown-menu li .menu-item:hover, .navbar-gitlab .dropdown-menu li .menu-item:active, .navbar-gitlab .dropdown-menu li .menu-item:focus, .navbar-gitlab .dropdown-menu-nav li a.is-focused, .navbar-gitlab .dropdown-menu-nav li a:hover, .navbar-gitlab .dropdown-menu-nav li .participants-more .btn-link:hover, .participants-more .navbar-gitlab .dropdown-menu-nav li .btn-link:hover, .navbar-gitlab .dropdown-menu-nav li .user-list-more .btn-link:hover, .user-list-more .navbar-gitlab .dropdown-menu-nav li .btn-link:hover, .navbar-gitlab .dropdown-menu-nav li a:active, .navbar-gitlab .dropdown-menu-nav li a:focus, .navbar-gitlab .dropdown-menu-nav li button.is-focused, .navbar-gitlab .dropdown-menu-nav li button:hover, .navbar-gitlab .dropdown-menu-nav li button:active, .navbar-gitlab .dropdown-menu-nav li button:focus, .navbar-gitlab .dropdown-menu-nav li .menu-item.is-focused, .navbar-gitlab .dropdown-menu-nav li .menu-item:hover, .navbar-gitlab .dropdown-menu-nav li .menu-item:active, .navbar-gitlab .dropdown-menu-nav li .menu-item:focus {
+    background-color: #303030 !important;
+}
+
+.issues-details-filters .dropdown-menu li a.is-focused, .issues-details-filters .dropdown-menu li a:hover, .issues-details-filters .dropdown-menu li .participants-more .btn-link:hover, .participants-more .issues-details-filters .dropdown-menu li .btn-link:hover, .issues-details-filters .dropdown-menu li .user-list-more .btn-link:hover, .user-list-more .issues-details-filters .dropdown-menu li .btn-link:hover, .issues-details-filters .dropdown-menu li a:active, .issues-details-filters .dropdown-menu li a:focus, .issues-details-filters .dropdown-menu li button.is-focused, .issues-details-filters .dropdown-menu li button:hover, .issues-details-filters .dropdown-menu li button:active, .issues-details-filters .dropdown-menu li button:focus, .issues-details-filters .dropdown-menu li .menu-item.is-focused, .issues-details-filters .dropdown-menu li .menu-item:hover, .issues-details-filters .dropdown-menu li .menu-item:active, .issues-details-filters .dropdown-menu li .menu-item:focus, .issues-details-filters .dropdown-menu-nav li a.is-focused, .issues-details-filters .dropdown-menu-nav li a:hover, .issues-details-filters .dropdown-menu-nav li .participants-more .btn-link:hover, .participants-more .issues-details-filters .dropdown-menu-nav li .btn-link:hover, .issues-details-filters .dropdown-menu-nav li .user-list-more .btn-link:hover, .user-list-more .issues-details-filters .dropdown-menu-nav li .btn-link:hover, .issues-details-filters .dropdown-menu-nav li a:active, .issues-details-filters .dropdown-menu-nav li a:focus, .issues-details-filters .dropdown-menu-nav li button.is-focused, .issues-details-filters .dropdown-menu-nav li button:hover, .issues-details-filters .dropdown-menu-nav li button:active, .issues-details-filters .dropdown-menu-nav li button:focus, .issues-details-filters .dropdown-menu-nav li .menu-item.is-focused, .issues-details-filters .dropdown-menu-nav li .menu-item:hover, .issues-details-filters .dropdown-menu-nav li .menu-item:active, .issues-details-filters .dropdown-menu-nav li .menu-item:focus {
+    background-color: #303030 !important;
+}
+
+.tree-holder .dropdown-menu li a.is-focused, .tree-holder .dropdown-menu li a:hover, .tree-holder .dropdown-menu li .participants-more .btn-link:hover, .participants-more .tree-holder .dropdown-menu li .btn-link:hover, .tree-holder .dropdown-menu li .user-list-more .btn-link:hover, .user-list-more .tree-holder .dropdown-menu li .btn-link:hover, .tree-holder .dropdown-menu li a:active, .tree-holder .dropdown-menu li a:focus, .tree-holder .dropdown-menu li button.is-focused, .tree-holder .dropdown-menu li button:hover, .tree-holder .dropdown-menu li button:active, .tree-holder .dropdown-menu li button:focus, .tree-holder .dropdown-menu li .menu-item.is-focused, .tree-holder .dropdown-menu li .menu-item:hover, .tree-holder .dropdown-menu li .menu-item:active, .tree-holder .dropdown-menu li .menu-item:focus, .tree-holder .dropdown-menu-nav li a.is-focused, .tree-holder .dropdown-menu-nav li a:hover, .tree-holder .dropdown-menu-nav li .participants-more .btn-link:hover, .participants-more .tree-holder .dropdown-menu-nav li .btn-link:hover, .tree-holder .dropdown-menu-nav li .user-list-more .btn-link:hover, .user-list-more .tree-holder .dropdown-menu-nav li .btn-link:hover, .tree-holder .dropdown-menu-nav li a:active, .tree-holder .dropdown-menu-nav li a:focus, .tree-holder .dropdown-menu-nav li button.is-focused, .tree-holder .dropdown-menu-nav li button:hover, .tree-holder .dropdown-menu-nav li button:active, .tree-holder .dropdown-menu-nav li button:focus, .tree-holder .dropdown-menu-nav li .menu-item.is-focused, .tree-holder .dropdown-menu-nav li .menu-item:hover, .tree-holder .dropdown-menu-nav li .menu-item:active, .tree-holder .dropdown-menu-nav li .menu-item:focus {
+    background-color: #303030 !important;
+}
+
+/* === Group list === */
+.group-list-tree .group-row-contents:hover {
+    border-color: #565656;
+    background-color: #262626;
+}
+.group-list-tree .group-row-contents {
+    border-bottom: solid 1px #565656;
+}
+
+/* === Code preview === */
+.file-title-flex-parent {
+    background-color: #262626;
+    border-bottom: 1px solid #565656;
+}
+.code.white .line-numbers, .code.white .diff-line-num {
+    background-color: #202020;
+}
+.code.white, .code.white pre.code, .code.white .line_holder .line_content {
+    background-color: #161616;
+    color: #565656;
+}
+/* Module */
+.code.white .nn {
+    color: #999999;
+}
+/* Dev based code */
+.code.white .n {
+    color: #999999;
+}
+/* function/class name */
+.code.white .nf {
+    color: orange;
+}
+/* Docstring */
+.code.white .s {
+    color: #8b2252;
+}
+/* Commentaries */
+.code.white .c {
+    color: green;
+}
+.code.white .k {
+    color: #565656;
+}
+.code.white .kn {
+    color: #565656;
+}
+.code.white .bp {
+    color: #565656;
+}
+
+/* === Project Wiki === */
+.right-sidebar {
+    background: #202020;
+    border-left: 1px solid #565656;
+}
+.right-sidebar .block {
+    border-bottom: 1px solid #565656;
+}
+.form-actions {
+    background-color: #181818;
+    border: 1px solid #363636;
+}
+
 
 /*! Github Dark v1.20.13 (2018-01-06) */
   /* Repository: https://github.com/StylishThemes/GitHub-Dark    */
@@ -917,6 +1183,7 @@ border-top: 2px solid #363636;
   }
   /* end auto-generated rules */
   body {
+    border-color: #565656 !important;
     background-color: #222 !important;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAABwElEQVR4AY3Vua3gOBgGQQXZhgKYgwHJYAA0Ksu9CAh6hxbTbvFzfx6rNEGlHY6z5KvMw4s43mN2Z5fqYLzKyrfyXhXKnKBdD9n58UWW3Vlb3mOCmWoHHZbdV5lv8t7Ver6ldsfqumVAdbblxxcZVcd7QWq2Y6VsadS4ZTzFDbFa5XivqlxVUFG1Jd6k66u8x0RIOw0cXAiNW2z58bJ5r1LTQtVVuy1x2jK+yLTlxy3v5RogszEXSB0ZF4iYWLbMMUBGPDbvpRQUVUV9kvGU6ynrIe9FOqssJcQ4oqurCjV6ytmqco4SwvGeNCoJaphwSHoK13cyuuU9ZaQI0lB1qB8zT3GL2XjKueU9pR+gH0OlqvGUzHWLQ81O0Dg95L3Uj9qxKx0pr3LdYrnlvQKlUEnV/8v4Xt6bThZROwaO5QfTUyY4GCBWu8Wf/nO4ULtj/li3mE9Z47zlx/WU94Iq7RD5XuZ6ynjIGn9yr1VhFaq2NH9s4bP4Rt5j2NFO5MBXGVsmsD5v3gslYORsd8R1i1rrIUoLKLXlvVhgKH7ApToyhk21TJhbLDvdN151vEetJtKdOtYo4SmnOvhGpjpe+xuj3X723ghdygAAAABJRU5ErkJggg==) !important;
     background-clip: border-box !important;
@@ -1069,11 +1336,11 @@ background-position: left top !important;
   /* text selection */
   ::selection {
     background-color: #67b977 !important;
-    color: #fff !important;
+    color: #363636 !important;
   }
   ::-moz-selection {
     background-color: #67b977 !important;
-    color: #fff !important;
+    color: #363636 !important;
   }
   .CodeMirror-selected {
     background: rgba(255, 255, 255, .12) !important;
@@ -2109,7 +2376,7 @@ background-position: left top !important;
     stroke: #ddd !important;
   }
   .calendar-graph rect.day:hover {
-    stroke: #fff !important;
+    stroke: #363636 !important;
   }
   /* contribution calendar - regular colors */
   .calendar-graph rect[fill="#ebedf0"], .contrib-legend li[style*="#eee"] {
@@ -2234,7 +2501,7 @@ background-position: left top !important;
   .leaflet-marker-pane img, .gundamcat {
     filter: brightness(.8) !important;
   }
-  /* invert #fff to #181818 */
+  /* invert #363636 to #181818 */
   /* https://github.com/sujitpal/statlearning-notebooks/blob/master/src/chapter2.ipynb */
   .output_area img, div[id^="contribution-first"] img,
   div[id^="contribution-joined-github"] img, div[id^="contribution-created"] img,
@@ -2275,7 +2542,7 @@ background-position: left top !important;
     fill: #999999 !important;
   }
   circle.day:hover {
-    fill: #fff !important;
+    fill: #363636 !important;
   }
   path.js-diff-placeholder {
     fill: #282828 !important;
@@ -2373,7 +2640,7 @@ background-position: left top !important;
     background: #999999 !important;
   }
   #network canvas, .qr-code-table, .qr-code-table .white {
-    background: #fff !important;
+    background: #363636 !important;
   }
   .state-widget .ahead .bar, .render-shell > .slider .dragger:hover,
   .render-shell > .slider .dragger:active {
@@ -3628,7 +3895,7 @@ background-position: left top !important;
   li.zhc-tabs__nav-item--active {
     background: #67b977 !important;
     border-color: #67b977 !important;
-    color: #fff !important;
+    color: #363636 !important;
   }
   .zhc-pipeline-sort-status__clear, .zhc-pipeline__load-more {
     color: #67b977 !important;
@@ -3758,7 +4025,7 @@ background-position: left top !important;
   }
   .zhc-dependency-issue-selector__issue-item-meta,
   .zhc-selection-item--is-active span, .zhc-btn--tint {
-    color: #fff !important;
+    color: #363636 !important;
   }
   .zhc-dependency .zhu-text-important, .zhc-dependency-banner,
   .zhc-dependency-type-dropdown__control, .zhc-dependency-type-dropdown__list,
@@ -3910,7 +4177,7 @@ background-position: left top !important;
   }
   .awesome-autocomplete .tt-suggestion em {
     background-color: #67b977 !important;
-    color: #fff !important;
+    color: #363636 !important;
   }
   .awesome-autocomplete .aa-thumbnail {
     background-color: #181818 !important;
@@ -3978,12 +4245,3 @@ background-position: left top !important;
   .markdown-format p > code, .markdown-format pre {
     background: #222 !important;
   }
-  /* inline code - big blocks */
-  .markdown-format pre, .markdown-body pre, .markdown-format .highlight pre,
-  .markdown-body .highlight pre, body.blog pre, #facebox pre, .blob-expanded,
-  .terminal, .copyable-terminal, #notebook .input_area, .blob-code-context,
-  .markdown-format code, body.blog pre > code, .api pre, .api code,
-  .hook-delivery-details pre,
-  /*! GitHub: Twilight */.CodeMirror,.highlight{background:#141414!important;color:#ccc!important}.blob-code,.blob-code-inner,.pl-entl,.pl-s2,.pl-smi,.pl-smp{color:#ccc!important}.pl-c,.pl-c span,.pl-pdc{color:#5f5a60!important;font-style:italic!important}.pl-c1,.pl-cce,.pl-cn,.pl-coc,.pl-enc,.pl-ens,.pl-kos,.pl-kou,.pl-mdr,.pl-mh,.pl-mh .pl-pdh,.pl-mq,.pl-pdc1,.pl-pde,.pl-pse,.pl-pse .pl-s2,.pl-scp,.pl-vi{color:#cf6a4c!important}.pl-cce,.pl-mdr,.pl-mh{font-weight:400!important}.pl-enti,.pl-mb,.pl-pdb{font-weight:700!important}.pl-cos,.pl-ml,.pl-pds,.pl-s1,.pl-sol{color:#8f9d6a!important}.pl-e,.pl-ef,.pl-en,.pl-enf,.pl-enm,.pl-entc,.pl-eoi,.pl-smc,.pl-vo{color:#ac885b!important}.pl-ent,.pl-eoa,.pl-eoai,.pl-eoai .pl-pde,.pl-k,.pl-ko,.pl-kolp,.pl-mc,.pl-mp .pl-s3,.pl-mr,.pl-ms,.pl-sok,.pl-sra,.pl-src,.pl-sre,.pl-st{color:#cda869!important}.pl-enti{color:#ac885b!important}.pl-entm,.pl-eoac,.pl-eoac .pl-pde,.pl-mai .pl-sf,.pl-mm,.pl-pdv,.pl-som,.pl-sr,.pl-stj,.pl-vpf{color:#7587a6!important}.pl-mb,.pl-pdb{color:#8f9d6a!important}.pl-mi,.pl-pdi{color:#cda869!important;font-style:italic!important}.pl-mp{color:#c5af75!important}.pl-mp1 .pl-sf,.pl-s3,.pl-sc,.pl-sf{color:#dad085!important}.pl-s{color:#f9ee98!important}.pl-stp,.pl-sv,.pl-v{color:#9b859d!important}.pl-mdht,.pl-mi1{color:#55a532!important;background:#020!important}.pl-md,.pl-mdhf{color:#bd2c00!important;background:#200!important}.pl-mdh,.pl-mdi{color:#7587a6!important;font-weight:400!important}.pl-ib{background-color:#f93!important}.pl-id{background-color:#a31515!important;color:#fff!important}.pl-ii,.pl-ii .pl-cce{background-color:#df5000!important;color:#fff!important}.pl-iu{background-color:#b4b7b4!important}.pl-mo{color:#969896!important}.pl-mri,.pl-va,.pl-vpu{color:teal!important}.pl-ms1{background-color:#f5f5f5!important}
-  /*! CodeMirror: Twilight */.cm-comment,.cm-link{font-style:italic!important}.CodeMirror-gutters{background:#222!important;border-right:1px solid #484848!important}.CodeMirror-guttermarker{color:#fff!important}.CodeMirror-guttermarker-subtle,.CodeMirror-linenumber{color:#aaa!important}.CodeMirror-cursor{border-left:1px solid #fff!important}.CodeMirror-activeline-background{background:#27282e!important}.CodeMirror-matchingbracket{outline:grey solid 1px!important;color:#fff!important}.cm-keyword{color:#f9ee98!important}.cm-atom{color:#fc0!important}.cm-number{color:#ca7841!important}.cm-def{color:#8da6ce!important}.cm-variable-2,.cm-variable-3,span.cm-def,span.cm-tag{color:#607392!important}.cm-builtin,.cm-operator{color:#cda869!important}.cm-comment{color:#777!important;font-weight:400!important}.cm-string{color:#8f9d6a!important}.cm-string-2{color:#bd6b18!important}.cm-meta{background-color:#141414!important;color:#f7f7f7!important}.cm-tag{color:#997643!important}.cm-attribute{color:#d6bb6d!important}.cm-header{color:#ff6400!important}.cm-hr{color:#aeaeae!important}.cm-link{color:#ad9361!important;text-decoration:none!important}.cm-error{border-bottom:1px solid red!important}
-  /*! Jupyter: Twilight */#notebook .highlight .ge,#notebook .highlight .sd{font-style:italic!important}#notebook .highlight .gh,#notebook .highlight .gp,#notebook .highlight .gs,#notebook .highlight .gu,#notebook .highlight .nf,#notebook .highlight .ni,#notebook .highlight .nt,#notebook .highlight .ow,#notebook .highlight .se,#notebook .highlight .si{font-weight:700!important}#notebook .highlight,#notebook .highlight pre,#notebook .highlight table,#notebook .input_area{background:#141414!important;color:#ccc!important}#notebook .highlight .hll{background-color:#ffc!important}#notebook .highlight .c,#notebook .highlight .c1,#notebook .highlight .cm,#notebook .highlight .cs{color:#5f5a60!important;font-style:italic!important}#notebook .highlight .err{border:#b22518!important}#notebook .highlight .k,#notebook .highlight .nb{color:#cda869!important}#notebook .highlight .cp{color:#5f5a60!important}#notebook .highlight .gd{background:#420e09!important}#notebook .highlight .gr{background:#b22518!important}#notebook .highlight .gh{color:navy!important}#notebook .highlight .gi{background:#253b22!important}#notebook .highlight .gu{color:purple!important}#notebook .highlight .kd{color:#e9df8f!important}#notebook .highlight .kp{color:#9b703f!important}#notebook .highlight .na{color:#f9ee98!important}#notebook .highlight .nc,#notebook .highlight .nn{color:#9b859d!important;font-weight:700!important}#notebook .highlight .no{color:#9b859d!important}#notebook .highlight .nd,#notebook .highlight .nv,#notebook .highlight .vc,#notebook .highlight .vg,#notebook .highlight .vi{color:#7587a6!important}#notebook .highlight .ni{color:#cf6a4c!important}#notebook .highlight .nf{color:#9b703f!important}#notebook .highlight .nt{color:#cda869!important}#notebook .highlight .ow{color:#a2f!important}#notebook .highlight .w{color:#141414!important}#notebook .highlight .mf,#notebook .highlight .mh,#notebook .highlight .mi,#notebook .highlight .mo,#notebook .highlight .ss{color:#cf6a4c!important}#notebook .highlight .s1,#notebook .highlight .s2,#notebook .highlight .sb,#notebook .highlight .sc,#notebook .highlight .sh,#notebook .highlight .sx{color:#8f9d6a!important}#notebook .highlight .sd{color:#8f9d6a!important}#notebook .highlight .se{color:#f9ee98!important}#notebook .highlight .si{color:#daefa3!important}#notebook .highlight .sr{color:#e9c062!important}#notebook .highlight .bp{color:#0aa!important}#notebook .highlight .il{color:#099!important}
