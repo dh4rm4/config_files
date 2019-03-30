@@ -2,7 +2,7 @@ echo "[+] Install basics stuff"
 sudo cp sources.list /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade -yy
-sudo apt install -yy htop git tree xclip firmware-iwlwifi
+sudo apt install -yy htop git tree xclip firmware-iwlwifi speedometer
 cd basics
 
 echo "[+] Setup git"
