@@ -354,6 +354,26 @@ body.ui-indigo .navbar-gitlab .navbar-sub-nav>li.active>a, body.ui-indigo .navba
 .initialize-with-readme-setting .form-check .option-title {
     color: #999999;
 }
+.provider-btn-group {
+    border: 1px solid #565656;
+}
+.provider-btn, .modal-content, .modal-header, .modal-body, .modal-footer {
+    background-color: #202020;
+    border: 1px solid #565656;
+}
+
+/* === SETTINGS === */
+.settings-message {
+    color: #202020;
+    background-color: #ff444487;
+    border: 1px solid #565656;
+}
+.provider-btn.not-active {
+    background: #202020;
+}
+.provider-btn-image {
+    border-right: 1px solid #565656;
+}
 
 /* === MAIN === */
 
