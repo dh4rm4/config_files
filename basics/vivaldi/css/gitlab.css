@@ -116,11 +116,14 @@ hr {
 }
 
 .avatar {
-    background: #161616;
+    background: transparent;
 }
 
 .avatar-circle, .avatar, .avatar-container {
-    border: 1px solid #161616;
+    border: none;
+}
+.context-header .avatar-container {
+    background-color: transparent;
 }
 
 .wiki p {
@@ -460,7 +463,27 @@ ul.content-list li {
     color: #565656;
 }
 
-/* === Project Wiki === */
+/* === Project === */
+.bg-light {
+    background-color: #202020 !important;
+}
+.git-empty h5 {
+    color: #999999;
+}
+.tree-holder .tree-table tr {
+    border-bottom: 1px solid #565656;
+    border-top: 1px solid #565656;
+}
+.bordered-box {
+    border: 1px solid #565656;
+}
+.clipboard-group .label-monospace, .commit-sha-group .label-monospace {
+    color: #999999;
+    background-color: #202020;
+    border: 1px solid #565656;
+
+}
+/* --- Wiki ---*/
 .right-sidebar {
     background: #202020;
     border-left: 1px solid #565656;
@@ -471,6 +494,11 @@ ul.content-list li {
 .form-actions {
     background-color: #181818;
     border: 1px solid #363636;
+}
+
+/* --- Settings --- */
+.settings+.settings {
+    border-top: 1px solid #565656;
 }
 
 /* === Login === */
