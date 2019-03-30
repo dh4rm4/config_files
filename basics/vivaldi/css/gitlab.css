@@ -1,7 +1,3 @@
-.content-wrapper .container-fluid {
-    background: #161616;
-}
-
 .projects-dropdown-container .project-dropdown-sidebar {
     border-right: 1px solid #565656;
 }
@@ -48,22 +44,6 @@ ul.content-list li {
     border-bottom: 1px solid #565656;
 }
 
-.login-page .new-session-tabs  {
-    box-shadow: 0 0 0 1px #565656;
-}
-.login-page .new-session-tabs li {
-    border-left: 1px solid #565656;
-}
-.login-page .new-session-tabs li a {
-    background: #202020;
-}
-.login-page .new-session-tabs li.active a {
-    background: #202020;
-    border-bottom: 2px solid #67b977 !important;
-}
-.login-page .login-box, .login-page .omniauth-container {
-    box-shadow: 0 0 0 1px #565656;
-}
 .fa-search:before {
     color: #565656;
 }
@@ -323,7 +303,57 @@ border-top: 2px solid #363636;
 .markdown-area {
     border: 1px solid #565656 !important;
 }
+.emoji-menu {
+    background-color: #202020;
+    border: 1px solid #363636;
+}
 
+/* === HEADER === */
+body.ui-indigo .navbar-gitlab {
+    background-color: #24292e;
+}
+body.ui-indigo .navbar-gitlab .navbar-sub-nav>li.active>a, body.ui-indigo .navbar-gitlab .navbar-sub-nav>li.active>button, body.ui-indigo .navbar-gitlab .navbar-sub-nav>li.dropdown.show>a, body.ui-indigo .navbar-gitlab .navbar-sub-nav>li.dropdown.show>button, body.ui-indigo .navbar-gitlab .navbar-nav>li.active>a, body.ui-indigo .navbar-gitlab .navbar-nav>li.active>button, body.ui-indigo .navbar-gitlab .navbar-nav>li.dropdown.show>a, body.ui-indigo .navbar-gitlab .navbar-nav>li.dropdown.show>button {
+    color: #292961;
+    background-color: #161616;
+}
+.frequent-items-dropdown-container .frequent-items-dropdown-sidebar {
+    border-right: 1px solid #363636;
+}
+.header-user.show .dropdown-menu li.current-user {
+    color: #999999;
+}
+
+/* === New Project === */
+.input-group .input-group-prepend, .input-group .input-group-btn:first-child, .input-group .input-group-append, .input-group .input-group-btn:last-child {
+    background-color: #161616;
+}
+.new_project .input-group-prepend.static-namespace, .new_project .static-namespace.input-group-btn:first-child, .new_project .input-group-append.static-namespace, .new_project .static-namespace.input-group-btn:last-child, .edit-project .input-group-prepend.static-namespace, .edit-project .static-namespace.input-group-btn:first-child, .edit-project .input-group-append.static-namespace, .edit-project .static-namespace.input-group-btn:last-child, .import-project .input-group-prepend.static-namespace, .import-project .static-namespace.input-group-btn:first-child, .import-project .input-group-append.static-namespace, .import-project .static-namespace.input-group-btn:last-child {
+    border: 1px solid #565656;
+}
+.input-group-text {
+    color: #999999;
+    background-color: #161616;
+    border: 1px solid #565656;
+}
+.visibility-level-setting .form-check .option-title {
+    color: #999999;
+}
+.gitlab-tabs {
+    background: #161616;
+    border: 1px solid #565656;
+}
+.gitlab-tabs li:not(:last-child) {
+    border-right: 1px solid #565656;
+}
+.gitlab-tab-content {
+    border: 1px solid #565656;
+}
+.nav-links:not(.quick-links) {
+    border-bottom: 1px solid #565656;
+}
+.initialize-with-readme-setting .form-check .option-title {
+    color: #999999;
+}
 
 /* === MAIN === */
 
@@ -423,6 +453,52 @@ ul.content-list li {
     border: 1px solid #363636;
 }
 
+/* === Login === */
+.login-page .new-session-tabs li:not(.active) {
+    background-color: #161616;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: #161616;
+}
+body.ui-indigo .nav-links li.active a, body.ui-indigo .nav-links li.md-header-tab.active button, body.ui-indigo .nav-links li a.active {
+    border-bottom: 2px solid #67b977;
+}
+.login-page .new-session-tabs  {
+    box-shadow: 0 0 0 1px #565656;
+}
+.login-page .new-session-tabs li {
+    border-left: 1px solid #565656;
+}
+.login-page .new-session-tabs li a {
+    background: #202020;
+}
+.login-page .new-session-tabs li.active a {
+    background: #202020;
+    border-bottom: 2px solid #67b977 !important;
+}
+.login-page .login-box, .login-page .omniauth-container {
+    box-shadow: 0 0 0 1px #565656;
+    background-color: #161616;
+}
+.card-header {
+    background-color: #262626;
+    border-bottom: 1px solid #363636;
+}
+.card-footer {
+    background-color: #262626;
+    border-top: 1px solid #363636;
+}
+
+/* === DASHBOARD */
+.user-callout.promotion-callout .bordered-box {
+    border-color: #363636;
+    background-color: #202020;
+}
+.blank-state {
+    border: 1px solid #363636;
+    background-color: #202020;
+    border-radius: 4px;
+}
 
 /*! Github Dark v1.20.13 (2018-01-06) */
   /* Repository: https://github.com/StylishThemes/GitHub-Dark    */
