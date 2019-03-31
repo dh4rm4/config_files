@@ -25,3 +25,5 @@ echo "[+] Install Monochrome theme"
 mkdir monochrome_installation && cd monochrome_installation
 git clone https://gitlab.com/pwyde/monochrome-kde.git && cd monochrome-kde
 bash install.sh -i
+cd ..
+rm -rf monochrome-kde

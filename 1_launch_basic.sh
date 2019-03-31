@@ -1,14 +1,15 @@
 echo "[+] Install basics stuff"
+cd basics/
 sudo cp sources.list /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade -yy
-sudo apt install -yy htop git tree xclip firmware-iwlwifi speedometer
-cd basics
+sudo apt install -yy htop git tree xclip firmware-iwlwifi speedometer gnupg2
+
 
 echo "[+] Setup git"
 cd git
 ./setup_git.sh
-cd..
+cd ..
 
 echo "[+] Setup emacs"
 cd emacs
